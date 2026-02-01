@@ -23,6 +23,12 @@ jobs:
           pip install -r requirements.txt
           pip install pytest pip-audit
 
+      - name: Prepare test database
+        env:
+          FLASK_ENV: testing
+        run: |
+          python manage.py
+
       - name: Run tests
         env:
           FLASK_ENV: testing

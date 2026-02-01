@@ -27,7 +27,7 @@ jobs:
         env:
           FLASK_ENV: testing
         run: |
-          python manage.py
+          flask db upgrade
 
       - name: Run tests
         env:

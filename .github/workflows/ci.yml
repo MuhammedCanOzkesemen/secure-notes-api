@@ -25,13 +25,16 @@ jobs:
 
       - name: Prepare test database
         env:
+          FLASK_APP: manage.py
           FLASK_ENV: testing
+          DATABASE_URL: sqlite:///test.db
         run: |
           flask db upgrade
 
       - name: Run tests
         env:
           FLASK_ENV: testing
+          DATABASE_URL: sqlite:///test.db
         run: |
           pytest -q
 

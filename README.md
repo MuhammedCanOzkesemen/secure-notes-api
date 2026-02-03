@@ -94,7 +94,16 @@ Secrets are loaded from environment variables.
 
 This project is intended for educational purposes only.
 
+
+        ## Bonus
+
+  - GitHub Actions CI pipeline (tests run automatically on every push)
+  - Dependency vulnerability scan using pip-audit
+
+
+
 👤 Author
 
 Muhammed Can Ozkesemen
 Security of Web Applications – Lab Project
+
